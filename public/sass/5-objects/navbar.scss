@@ -1,0 +1,9 @@
+header .navbar-default{
+	background-color: $white;
+
+	.navbar-nav{
+		position: absolute;
+	    left: 50%;
+	    transform: translate(-50%,0);
+	}
+}

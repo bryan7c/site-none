@@ -1,0 +1,27 @@
+{
+  "name": "fabio-buffet",
+  "version": "1.0.0",
+  "description": "Site voltado ao público que tem interesse em servicos de buffet para festas e casamento",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "buffet",
+    "fabio",
+    "buffet",
+    "alimentação",
+    "eventos"
+  ],
+  "author": "Bryan Marvila",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-server": "^0.1.0",
+    "gulp-webserver": "^0.9.1",
+    "opn": "^4.0.1"
+  }
+}

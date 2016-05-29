@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand visible-xs" href="#">
+                <img alt="Brand" src="img/logo.png" height="30">
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav">
+			    <li><a ng-class="{active: activeTab == '/'}" href="/">Home</a></li>
+			    <li><a ng-class="{active: activeTab == '/galeria'}" href="/galeria">Galeria</a></li>
+			    <li><a ng-class="{active: activeTab == '/clientes'}" href="/clientes">Clientes</a></li>
+			    <li><a ng-class="{active: activeTab == '/depoimentos'}" href="/depoimentos">Depoimentos</a></li>
+			    <li><a ng-class="{active: activeTab == '/quemsomos'}" href="/quemsomos">Quem somos</a></li>
+			    <li><a ng-class="{active: activeTab == '/contato'}" href="/contato">Contato</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>

@@ -1,0 +1,68 @@
+/* 1 - SETTINGS
+   ========================================================================== */
+/* 1 - IMPORT ALL SETTINGS
+   ========================================================================== */
+/* 2 - TOOLS
+   ========================================================================== */
+/* 1 - IMPORT ALL TOOLS
+   ========================================================================== */
+/* 3 - GENERIC
+   ========================================================================== */
+/* 1 - IMPORT ALL GENERICS
+   ========================================================================== */
+/* 4 - BASE
+   ========================================================================== */
+/* 1 - IMPORT ALL BASE
+   ========================================================================== */
+/* 5 - OBJECTS
+   ========================================================================== */
+/* 1 - IMPORT ALL OBJECTS
+   ========================================================================== */
+.logo-container {
+  height: 150px; }
+  .logo-container .main {
+    position: relative;
+    left: 50%;
+    padding: 10px;
+    border: 5px solid #000000;
+    background-color: #FFFFFF;
+    position: absolute;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    -ms-border-radius: 25%;
+    -o-border-radius: 25%;
+    border-radius: 25%;
+    -webkit-transform: translate(-70px, -10px);
+    -ms-transform: translate(-70px, -10px);
+    -o-transform: translate(-70px, -10px);
+    transform: translate(-70px, -10px); }
+    .logo-container .main .logo {
+      height: 100px;
+      max-width: 100%; }
+  .logo-container hr {
+    margin: 0px;
+    height: 20px;
+    background-color: #000000;
+    position: relative;
+    top: 50%;
+    border: 0px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%); }
+
+header .navbar-default {
+  background-color: #FFFFFF; }
+  header .navbar-default .navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0); }
+
+/* 6 - COMPONENTS
+   ========================================================================== */
+/* 1 - IMPORT ALL COMPONENTS
+   ========================================================================== */
+/* 7 - TRUMPS
+   ========================================================================== */
+/* 1 - IMPORT ALL TRUMPS
+   ========================================================================== */

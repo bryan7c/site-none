@@ -8,8 +8,10 @@ var folderPaths = {
 	scss: './public/sass',
 	css: './public/css',
 	partials: './public/partial',
-	script: './public/script',
-	teplate: './public/views'
+  script: './public/script',
+  images: './public/img',
+  libs: './public/lib',
+	views: './public/views'
 };
 
 var filePaths = {
@@ -40,6 +42,11 @@ gulp.task('webserver', function() {
     }));
 });
 
+gulp.task('copy', function() {
+    gulp.src([folderPaths.css, folderPaths.script, folderPaths.views, folderPaths.images, folderPaths.partials, folderPaths.libs, "./public/index.html"])
+        .pipe(gulp.dest('./dist/'))
+});
+
 gulp.task('openbrowser', function() {
   opn( 'http://localhost:' + server.port);
 });
@@ -53,5 +60,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function(){
   gulp.watch('./public/sass/**/*.scss', ['sass']);
 });
+
+gulp.task('build', ["copy"]);
 
 gulp.task('default', ['webserver', 'openbrowser', 'watch']);

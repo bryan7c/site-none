@@ -1,0 +1,188 @@
+form[name="formCertificado"]{
+    h3{
+        text-align: center;
+    }
+}
+.certificado {
+    width: 21cm;
+    height: 29.6cm;
+    position: relative;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    img {
+        width: 21cm;
+    }
+    div {
+        position: absolute;
+    }
+    .dia,
+    .mes,
+    .ano {
+        width: 30px;
+        text-align: center;
+    }
+    &.hapkido {
+        .dia {
+            left: 12.7cm;
+            top: 15.85cm;
+        }
+        .mes {
+            left: 13.7cm;
+            top: 15.85cm;
+        }
+        .ano {
+            left: 14.8cm;
+            top: 15.85cm;
+        }
+        .nome {
+            left: 6cm;
+            top: 13.4cm;
+        }
+        .faixa {
+            left: 6.5cm;
+            top: 15.85cm;
+        }
+    }
+    &.taekwondo {
+        .dia {
+            left: 12.7cm;
+            top: 15.85cm;
+        }
+        .mes {
+            left: 13.7cm;
+            top: 15.85cm;
+        }
+        .ano {
+            left: 14.8cm;
+            top: 15.85cm;
+        }
+        .nome {
+            left: 6cm;
+            top: 13.4cm;
+        }
+        .faixa {
+            left: 6.5cm;
+            top: 15.85cm;
+        }
+    }
+    &.muay {
+        font-size: 28px;
+        .dia {
+            left: 14.3cm;
+            top: 14.65cm;
+        }
+        .mes {
+            left: 15.5cm;
+            top: 14.65cm;
+        }
+        .ano {
+            left: 16.8cm;
+            top: 14.65cm;
+        }
+        .nome {
+            left: 4.5cm;
+            top: 11.4cm;
+        }
+        .faixa {
+            left: 5.5cm;
+            top: 14.65cm;
+        }
+    }
+}
+
+@media print {
+    .certificado {
+        width: 21cm;
+        height: 29.6cm;
+        position: relative;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 25px;
+        page-break-after: always;
+        font-weight: 400;
+        img {
+            width: 21cm;
+        }
+        div {
+            position: absolute;
+        }
+        .dia,
+        .mes,
+        .ano {
+            width: 30px;
+            text-align: center;
+        }
+        &.hapkido {
+            .dia {
+                left: 12.7cm;
+                top: 15.85cm;
+            }
+            .mes {
+                left: 13.7cm;
+                top: 15.85cm;
+            }
+            .ano {
+                left: 14.8cm;
+                top: 15.85cm;
+            }
+            .nome {
+                left: 6cm;
+                top: 13.4cm;
+            }
+            .faixa {
+                left: 6.5cm;
+                top: 15.85cm;
+            }
+        }
+        &.taekwondo {
+            .dia {
+                left: 12.7cm;
+                top: 15.85cm;
+            }
+            .mes {
+                left: 13.7cm;
+                top: 15.85cm;
+            }
+            .ano {
+                left: 14.8cm;
+                top: 15.85cm;
+            }
+            .nome {
+                left: 6cm;
+                top: 13.4cm;
+            }
+            .faixa {
+                left: 6.5cm;
+                top: 15.85cm;
+            }
+        }
+        &.muay {
+            .dia {
+                left: 14.3cm;
+                top: 14.75cm;
+            }
+            .mes {
+                left: 15.5cm;
+                top: 14.75cm;
+            }
+            .ano {
+                left: 16.8cm;
+                top: 14.75cm;
+            }
+            .nome {
+                left: 4.5cm;
+                top: 11.5cm;
+            }
+            .faixa {
+                left: 5.5cm;
+                top: 14.75cm;
+            }
+        }
+    }
+    .no-print {
+        display: none;
+    }
+}
+@page {
+ margin: 0;
+}

@@ -58,6 +58,145 @@ header .navbar-default {
     left: 50%;
     transform: translate(-50%, 0); }
 
+.carousel {
+  height: 600px; }
+
+form[name="formCertificado"] h3 {
+  text-align: center; }
+
+.certificado {
+  width: 21cm;
+  height: 29.6cm;
+  position: relative;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  font-weight: 600; }
+  .certificado img {
+    width: 21cm; }
+  .certificado div {
+    position: absolute; }
+  .certificado .dia,
+  .certificado .mes,
+  .certificado .ano {
+    width: 30px;
+    text-align: center; }
+  .certificado.hapkido .dia {
+    left: 12.7cm;
+    top: 15.85cm; }
+  .certificado.hapkido .mes {
+    left: 13.7cm;
+    top: 15.85cm; }
+  .certificado.hapkido .ano {
+    left: 14.8cm;
+    top: 15.85cm; }
+  .certificado.hapkido .nome {
+    left: 6cm;
+    top: 13.4cm; }
+  .certificado.hapkido .faixa {
+    left: 6.5cm;
+    top: 15.85cm; }
+  .certificado.taekwondo .dia {
+    left: 12.7cm;
+    top: 15.85cm; }
+  .certificado.taekwondo .mes {
+    left: 13.7cm;
+    top: 15.85cm; }
+  .certificado.taekwondo .ano {
+    left: 14.8cm;
+    top: 15.85cm; }
+  .certificado.taekwondo .nome {
+    left: 6cm;
+    top: 13.4cm; }
+  .certificado.taekwondo .faixa {
+    left: 6.5cm;
+    top: 15.85cm; }
+  .certificado.muay {
+    font-size: 28px; }
+    .certificado.muay .dia {
+      left: 14.3cm;
+      top: 14.65cm; }
+    .certificado.muay .mes {
+      left: 15.5cm;
+      top: 14.65cm; }
+    .certificado.muay .ano {
+      left: 16.8cm;
+      top: 14.65cm; }
+    .certificado.muay .nome {
+      left: 4.5cm;
+      top: 11.4cm; }
+    .certificado.muay .faixa {
+      left: 5.5cm;
+      top: 14.65cm; }
+
+@media print {
+  .certificado {
+    width: 21cm;
+    height: 29.6cm;
+    position: relative;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    page-break-after: always;
+    font-weight: 400; }
+    .certificado img {
+      width: 21cm; }
+    .certificado div {
+      position: absolute; }
+    .certificado .dia,
+    .certificado .mes,
+    .certificado .ano {
+      width: 30px;
+      text-align: center; }
+    .certificado.hapkido .dia {
+      left: 12.7cm;
+      top: 15.85cm; }
+    .certificado.hapkido .mes {
+      left: 13.7cm;
+      top: 15.85cm; }
+    .certificado.hapkido .ano {
+      left: 14.8cm;
+      top: 15.85cm; }
+    .certificado.hapkido .nome {
+      left: 6cm;
+      top: 13.4cm; }
+    .certificado.hapkido .faixa {
+      left: 6.5cm;
+      top: 15.85cm; }
+    .certificado.taekwondo .dia {
+      left: 12.7cm;
+      top: 15.85cm; }
+    .certificado.taekwondo .mes {
+      left: 13.7cm;
+      top: 15.85cm; }
+    .certificado.taekwondo .ano {
+      left: 14.8cm;
+      top: 15.85cm; }
+    .certificado.taekwondo .nome {
+      left: 6cm;
+      top: 13.4cm; }
+    .certificado.taekwondo .faixa {
+      left: 6.5cm;
+      top: 15.85cm; }
+    .certificado.muay .dia {
+      left: 14.3cm;
+      top: 14.75cm; }
+    .certificado.muay .mes {
+      left: 15.5cm;
+      top: 14.75cm; }
+    .certificado.muay .ano {
+      left: 16.8cm;
+      top: 14.75cm; }
+    .certificado.muay .nome {
+      left: 4.5cm;
+      top: 11.5cm; }
+    .certificado.muay .faixa {
+      left: 5.5cm;
+      top: 14.75cm; }
+  .no-print {
+    display: none; } }
+
+@page {
+  margin: 0; }
+
 /* 6 - COMPONENTS
    ========================================================================== */
 /* 1 - IMPORT ALL COMPONENTS

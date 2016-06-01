@@ -1,1 +1,19 @@
 <div>View home</div>
+<div class="well" ng-repeat="lanche in lanches">
+    <b>Nome:</b> {{lanche.nome}}
+    <br />
+    <b>Preço:</b> {{lanche.valor | currency}}
+    <br />
+    <small>Ingredientes: {{lanche.ingredientes | split:", "}}</small>
+</div>
+{{lanche}}
+<form action="" name="formLanche">
+    <input type="text" name="nome" placeholder="Nome" ng-model="lanche.nome">
+    <input type="text" name="preco" placeholder="Preço" ng-model="lanche.valor">
+    Teste para tv
+    <div class="checkbox" ng-repeat="ingrediente in ingredientes">
+        <label>
+            <input type="checkbox" push-array lista="lanche.ingredientes" value="{{ingrediente}}" /> {{ingrediente}}
+        </label>
+    </div>
+</form>

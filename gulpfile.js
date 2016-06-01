@@ -3,19 +3,20 @@ var webserver = require('gulp-webserver');
 var opn       = require('opn');
 var sass      = require('gulp-sass');
 var plumber   = require('gulp-plumber');
+var ghPages = require('gulp-gh-pages');
 
 var folderPaths = {
-	scss: './public/sass',
-	css: './public/css',
-	partials: './public/partial',
+  scss: './public/sass',
+  css: './public/css',
+  partials: './public/partial',
   script: './public/script',
   images: './public/img',
   libs: './public/lib',
-	views: './public/views'
+  views: './public/views'
 };
 
 var filePaths = {
-	scss: ['./public/sass/style.scss']
+  scss: ['./public/sass/style.scss']
 }
 
 var server = {
@@ -42,8 +43,13 @@ gulp.task('webserver', function() {
     }));
 });
 
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
+
 gulp.task('copy', function() {
-    gulp.src([folderPaths.css, folderPaths.script, folderPaths.views, folderPaths.images, folderPaths.partials, folderPaths.libs, "./public/index.html"])
+    gulp.src([folderPaths.css, folderPaths.script, folderPaths.views, folderPaths.images, folderPaths.partials, folderPaths.libs, "./public/*.html"])
         .pipe(gulp.dest('./dist/'))
 });
 
@@ -57,10 +63,6 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(folderPaths.css));
 });
 
-gulp.task('watch', function(){
-  gulp.watch('./public/sass/**/*.scss', ['sass']);
-});
-
-gulp.task('build', ["copy"]);
+gulp.task('build', ["copy", "deploy"]);
 
 gulp.task('default', ['webserver', 'openbrowser', 'watch']);

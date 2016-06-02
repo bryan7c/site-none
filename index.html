@@ -1,36 +1,112 @@
 <!DOCTYPE html>
-<html ng-app="fabioApp">
+<html>
   <head>
-    <meta charset="utf-8">
-    <base href="/">
-    <title>Fabio Eventos</title>
-    <link href='https://fonts.googleapis.com/css?family=Nunito:300,700,400' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic' rel='stylesheet' type='text/css'>
-    <!-- Bootstrap style sheet -->
-    <link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="./css/style.css" charset="utf-8">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Site-none by bryan7c</title>
   </head>
-  <body ng-cloak>
 
-    <!--<header ng-include="'partial/header.html'" class="no-print"></header>-->
-    <div ng-view></div>
-    <!--<footer ng-include="'partial/rodape.html'" class="no-print"></footer>-->
+  <body>
+    <a id="forkme_banner" href="https://github.com/bryan7c/site-none">View on GitHub</a>
+    <div class="shell">
 
-    <!-- Angular Material requires Angular.js Libraries -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="./lib/angular-route/angular-route.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.17/router.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Site-none</h1>
+            <h2>Site vazio com rota e libs padrões</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
 
-    <!-- Pernsonal scripts -->
-    <script src="./script/app.js" charset="utf-8"></script>
-    <script src="./script/routePublic.js" charset="utf-8"></script>
-    <script src="./script/controller/homeCtrl.js" charset="utf-8"></script>
-    <script src="./script/controller/certificadoHapkidoCtrl.js" charset="utf-8"></script>
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/bryan7c/site-none/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/bryan7c/site-none/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <p>&lt;!DOCTYPE html&gt;
+
+  </p>
     
-    <script src="./script/filter/splitFilter.js" charset="utf-8"></script>
-    <script src="./script/directive/pushArray/pushArray.js" charset="utf-8"></script>
+    
+    Fabio Eventos
+    
+    
+    &lt;!-- Angular Material style sheet --&gt;
+    
+    &lt;!-- Bootstrap style sheet --&gt;
+    
+    
+  
+  
+
+<pre><code>&lt;!--&lt;header ng-include="'partial/header.html'" class="no-print"&gt;&lt;/header&gt;--&gt;
+&lt;div ng-view&gt;&lt;/div&gt;
+&lt;!--&lt;footer ng-include="'partial/rodape.html'" class="no-print"&gt;&lt;/footer&gt;--&gt;
+
+&lt;!-- Angular Material requires Angular.js Libraries --&gt;
+&lt;script src="./lib/angular/angular.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="./lib/angular-locale-pt-br/angular-locale_pt-br.js"&gt;&lt;/script&gt;
+&lt;script src="./lib/angular-animate/angular-animate.min.js"&gt;&lt;/script&gt;
+&lt;script src="./lib/angular-aria/angular-aria.min.js"&gt;&lt;/script&gt;
+&lt;script src="./lib/angular-messages/angular-messages.min.js"&gt;&lt;/script&gt;
+&lt;script src="./lib/angular-route/angular-route.min.js"&gt;&lt;/script&gt;
+&lt;script src="./lib/angular-material/angular-material.min.js"&gt;&lt;/script&gt;
+&lt;script src="./lib/jquery/dist/jquery.js"&gt;&lt;/script&gt;
+&lt;script src="./lib/bootstrap/dist/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;script src="./lib/firebase/firebase.js"&gt;&lt;/script&gt;
+&lt;script src="./lib/angularfire/dist/angularfire.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- Pernsonal scripts --&gt;
+&lt;script src="./script/app.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="./script/routePublic.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="./script/controller/homeCtrl.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="./script/controller/certificadoHapkidoCtrl.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;script src="./script/filter/splitFilter.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="./script/directive/pushArray/pushArray.js" charset="utf-8"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>
+</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/bryan7c">bryan7c</a> can be found on <a href="https://github.com/bryan7c/site-none">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
     
   </body>
 </html>

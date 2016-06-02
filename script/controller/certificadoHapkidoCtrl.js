@@ -47,16 +47,6 @@ app.controller('certificadoHapkidoCtrl',function($scope, $rootScope, $location){
 			{nome: "Preto"}
 		],
 	};
-	Cinza
-Branco e cinza
-Branco
-Branco e vermelho
-Vermelho
-Vermelho e azul claro
-Azul claro
-Azul claro e azul escuro
-Azul escuro
-Azul escuro com preto e preto
 	$scope.artes = [{nome: "Hapkido", imagem: "certificado_hapkido.jpg"}, {nome: "Muay Thai", imagem: "certificado_muay_thai.jpg"}, {nome: "Taekwondo", imagem: "certificado_taekwondo.jpg"}];
 	$scope.certificados = [];
 	//Seta uma variável global para armazenar o menu ativo

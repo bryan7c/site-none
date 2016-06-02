@@ -45,7 +45,7 @@ app.controller('certificadoHapkidoCtrl',function($scope, $rootScope, $location){
 			{nome: "Azul escuro"},
 			{nome: "Azul escuro e Preto"},
 			{nome: "Preto"}
-		],
+		]
 	};
 	$scope.artes = [{nome: "Hapkido", imagem: "certificado_hapkido.jpg"}, {nome: "Muay Thai", imagem: "certificado_muay_thai.jpg"}, {nome: "Taekwondo", imagem: "certificado_taekwondo.jpg"}];
 	$scope.certificados = [];

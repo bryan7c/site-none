@@ -1,17 +1,13 @@
 {
-  "name": "fabio-buffet",
+  "name": "none",
   "version": "1.0.0",
-  "description": "Site voltado ao público que tem interesse em servicos de buffet para festas e casamento",
+  "description": "Description",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "buffet",
-    "fabio",
-    "buffet",
-    "alimentação",
-    "eventos"
+    "key"
   ],
   "author": "Bryan Marvila",
   "license": "ISC",

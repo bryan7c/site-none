@@ -49,8 +49,16 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('copy', function() {
-    gulp.src([folderPaths.css+"**/*", folderPaths.script+"**/*", folderPaths.views+"**/*", folderPaths.images+"**/*", folderPaths.partials+"**/*", folderPaths.libs+"**/*/*.*", "./public/*.html"])
-        .pipe(gulp.dest('./dist/'))
+    gulp.src([
+      folderPaths.css+"**/*",
+      folderPaths.script+"**/*",
+      folderPaths.views+"**/*",
+      folderPaths.images+"**/*",
+      folderPaths.partials+"**/*",
+      folderPaths.libs+"**/*/*.*",
+      "./public/*.html"
+    ])
+    .pipe(gulp.dest('./dist/'))
 });
 
 gulp.task('openbrowser', function() {

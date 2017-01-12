@@ -5,13 +5,13 @@ app.config(function($routeProvider, $locationProvider) {
     $routeProvider
 
     // para a rota '/', carregaremos o template home.html e o controller 'HomeCtrl'
-        .when('/certificado-hapkido', {
-            templateUrl: 'views/home.html',
-            controller: 'homeCtrl',
+        .when('/none', {
+            templateUrl: 'views/none.html',
+            controller: 'noneCtrl',
         })
         .when('/', {
-            templateUrl: 'views/certificado.html',
-            controller: 'certificadoHapkidoCtrl',
+            templateUrl: 'views/home.html',
+            controller: 'homeCtrl',
         })
 
     // caso não seja nenhum desses, redirecione para a rota '/'

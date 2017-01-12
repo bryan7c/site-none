@@ -1,1 +1,1 @@
-var app = angular.module('fabioApp',['ngRoute', 'firebase'])
+var app = angular.module('noneApp',['ngRoute', 'firebase'])

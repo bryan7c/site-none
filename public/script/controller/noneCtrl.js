@@ -1,4 +1,4 @@
-app.controller('certificadoHapkidoCtrl',function($scope, $rootScope, $location){
+app.controller('noneCtrl',function($scope, $rootScope, $location){
 	var graduacoes = {
 		"Hapkido":[
 			{nome: "Branca"},

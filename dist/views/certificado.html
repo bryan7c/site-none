@@ -3,23 +3,23 @@
         <h3>Gerar Certificado</h3>
         <div class="form-group col-md-12">
             <label for="nome">Nome</label>
-            <input class="form-control" type="text" id="nome" ng-model="certificado.nome" regquired>
+            <input class="form-control" type="text" id="nome" ng-model="certificado.nome" required>
         </div>
         <div class="form-group col-md-4">
             <label for="arte">Arte</label>
-            <select class="form-control" id="arte" ng-model="certificado.arte" ng-change="filterGraduacao(certificado.arte)" ng-options="arte.nome for arte in artes" regquired>
+            <select class="form-control" id="arte" ng-model="certificado.arte" ng-change="filterGraduacao(certificado.arte)" ng-options="arte.nome for arte in artes" required>
                 <option value="">Escolha a arte</option>
             </select>
         </div>
         <div class="form-group col-md-4">
             <label for="graduacao">Graduação</label>
-            <select class="form-control" id="graduacao" ng-model="certificado.graduacao" ng-options="graduacao.nome as graduacao.nome for graduacao in graduacoes" regquired>
+            <select class="form-control" id="graduacao" ng-model="certificado.graduacao" ng-options="graduacao.nome as graduacao.nome for graduacao in graduacoes" required>
                 <option value="">Escolha a graduação</option>
             </select>
         </div>
         <div class="form-group col-md-4">
             <label for="data">Data</label>
-            <input class="form-control" type="date" id="data" ng-model="certificado.data" regquired>
+            <input class="form-control" type="date" id="data" ng-model="certificado.data" required>
         </div>
         <hr  class="row col-md-12" />
         <div class="form-group control col-md-12">
